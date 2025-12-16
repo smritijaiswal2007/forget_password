@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set OTP</title>
+</head>
+<body>
+
+    <h3>Enter valid email</h3>
+
+    <form action="{% url 'resetpass' %}" >
+        <input type="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <button type="submit">Set OTP</button>
+    </form>
+
+</body>
+</html>
