@@ -8,7 +8,7 @@
 
     <h3>Reset Password</h3>
 
-    <form action="{% url 'resetpass' %}">
+    <form >
 
         <label>Enter OTP:</label><br>
         <input type="text" name="otp" required><br><br>
@@ -19,7 +19,9 @@
         <label>Confirm New Password:</label><br>
         <input type="password" name="confirm_password" required><br><br>
 
-        <button type="submit">Reset Password</button>
+        {% comment %} <a href="resetpass"  class="forgot"> Password reset</a><br><br> {% endcomment %}
+        <a href=""  class="forgot"> Password reset</a><br><br> 
+
 
     </form>
 
